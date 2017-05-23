@@ -1,13 +1,13 @@
 {
   "name": "fetchserver",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Server fetches data from other server",
   "main": "build/server.js",
   "repository": "https://github.com/mprather1/fetch_server",
   "author": "Michael Prather",
   "license": "MIT",
   "scripts": {
-    "start": "SERVER_ADDRESS=http://localhost:55460 NODE_ENV=development PORT=8001 TZ='America/Chicago' node build/server.js",
+    "start": "node build/server.js",
     "dev": "SERVER_ADDRESS=http://localhost:55460 NODE_ENV=development PORT=8001 TZ='America/Chicago' nodemon build/server.js",
     "test": "SERVER_ADDRESS=http://localhost:8000 PORT=8001 TZ='America/Chicago' NODE_ENV=test mocha build/test -t 10000",
     "build": "babel -d build src",
